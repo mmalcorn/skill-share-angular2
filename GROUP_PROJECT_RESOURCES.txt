@@ -1,0 +1,11 @@
+Angular 2 Firebase and AngularFire 2 Crash Course: http://blog.angular-university.io/angular-2-firebase/
+
+
+Build Angular Apps Using Angular2 CLI:
+http://www.mithunvp.com/build-angular-apps-using-angular-2-cli/
+
+Git with Collaborators: Workflow:
+https://www.learnhowtoprogram.com/javascript/team-week-c740a2d9-9512-4646-ab48-923d1c8a9f00/git-with-collaborators-workflow
+
+AngularFire2 Installation and Setup (GitHub):
+https://github.com/angular/angularfire2/blob/master/docs/1-install-and-setup.md

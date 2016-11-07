@@ -5,19 +5,21 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 @Component({
   selector: 'app-root',
   template: `
-  <h1> Testing for sharing! {{skill_name}} </h1>
+  <h1> Testing for sharing! </h1>
 
   <div class='skill' *ngFor='let skill of models | async'>
     <p>{{skill.skill_name}}</p>
   </div>
+
+
   `
 
 })
 export class AppComponent {
   models: FirebaseListObservable<any[]>;
   constructor(angularFire: AngularFire){
-    this.models = angularFire.database.list('skills');
+    this.models = angularFire.database.list('skills')
+
   }
-title = 'app works more!';
 
 }
