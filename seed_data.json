@@ -1,0 +1,27 @@
+{ "skills": [{
+    "skill_name": "basketweaving"
+  }, {
+    "skill_name": "painting"
+  }, {
+    "skill_name": "c++"
+  }],
+  "users": [{
+     "username": "Lisa Marie",
+     "email": "lisa@website.com",
+     "photo": "https://avatars2.githubusercontent.com/u/7815451?v=3&s=460",
+     "skills_held": ["JavaScript", "Illustration", "Poetry"],
+     "skills_wanted": ["Fermenting foods", "Bike repair", "Brewing Beer"]
+  }, {
+    "username": "Mere A",
+    "email": "mere@website.com",
+    "photo": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMNnwOtR175r_W1lBvkSdUzktoGcS3xKWHC5JFHblJiqtR4OtqyQ",
+    "skills_held": ["Yoga", "Poetry", "Billiards"],
+    "skills_wanted": ["Survivalist Techniques", "Illustration", "Woodburning"]
+  }, {
+    "username": "Stylin Douglas",
+    "email": "sdouglas@stylind.com",
+    "photo": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7aezxe0FGde0Z7yyINzCcL8HCNnWewm7tzFa025DwtNgozv-C",
+    "skills_held": ["Guitar", "Billiards", "Motivational Speaking"],
+    "skills_wanted": ["Brewing Beer", "Yoga", "Survivalist Techniques"]
+   }]
+}

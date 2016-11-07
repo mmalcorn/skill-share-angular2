@@ -5,10 +5,10 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 @Component({
   selector: 'app-root',
   template: `
-  <h1> Testing for sharing! {{title}} </h1>
+  <h1> Testing for sharing! {{skill_name}} </h1>
 
   <div class='skill' *ngFor='let skill of models | async'>
-    <p>{{skill.title}}</p>
+    <p>{{skill.skill_name}}</p>
   </div>
   `
 
