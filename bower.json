@@ -1,0 +1,20 @@
+{
+  "name": "skill-share-angular2",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Lisa MacCarrigan <Lisa.MacCarrigan@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/LisaMacCarrigan/skill-share-angular2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
