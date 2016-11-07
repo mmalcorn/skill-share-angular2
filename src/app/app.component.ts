@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { FirebaseDataService } from './firebase-data.service';
 
 
 @Component({
   selector: 'app-root',
+  providers: [FirebaseDataService],
   template: `
   <h1> Testing for sharing! </h1>
 
@@ -20,10 +22,9 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 export class AppComponent {
   skills: FirebaseListObservable<any[]>;
   users: FirebaseListObservable<any[]>;
-  constructor(angularFire: AngularFire){
+  constructor(angularFire: AngularFire, dataService: FirebaseDataService){
     this.skills = angularFire.database.list('skills');
     this.users = angularFire.database.list('users');
-
   }
 
 }
