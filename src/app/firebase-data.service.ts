@@ -9,7 +9,8 @@ export class FirebaseDataService {
   skills: FirebaseListObservable<any[]>;
   users: FirebaseListObservable<any[]>;
 
-  constructor(public angularFire: AngularFire) { }
+  constructor(public angularFire: AngularFire) {
+  }
   getSkills() {
     this.skills = this.angularFire.database.list('skills');
     return this.skills;
