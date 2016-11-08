@@ -8,6 +8,8 @@ import { AngularFireModule } from 'angularfire2';
 import { UserListComponent } from './user-list/user-list.component';
 import { HomeComponent } from './home/home.component';
 import { routing } from './app.routing';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { MatchesComponent } from './matches/matches.component';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyDhyRz5WogFqRN9wBYLLIVhFUIOuNeebts",
@@ -20,7 +22,9 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     UserListComponent,
-    HomeComponent
+    HomeComponent,
+    UserDetailsComponent,
+    MatchesComponent
   ],
   imports: [
     BrowserModule,
