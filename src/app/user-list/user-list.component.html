@@ -1,3 +1,13 @@
 <h1>User List</h1>
 <a routerLink=""><< Home</a>
 <a routerLink="details"><< User Details</a>
+
+<div class="user" *ngFor='let user of users | async'>
+
+  <p>{{user.username}}</p>
+  <div>
+    <img src="{{user.photo}}" alt="photo">
+  </div>
+  <p>{{user.occupation}}</p>
+
+</div>
