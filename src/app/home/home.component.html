@@ -1,3 +1,8 @@
-<h1>App Name! COOL!</h1>
+<h1>Home Page</h1>
 <a routerLink="users">View All Users</a>
+<br>
 <a routerLink="users/matches">Go to Matches</a>
+
+<div class='skill' *ngFor='let skill of skills | async'>
+  <p>{{skill.skill_name}}</p>
+</div>

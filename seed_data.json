@@ -1,27 +1,66 @@
 { "skills": [{
+    "skill_name": "dissecting"
+  }, {
+    "skill_name": "sailing"
+  }, {
+    "skill_name": "jogging"
+  }, {
     "skill_name": "basketweaving"
   }, {
     "skill_name": "painting"
   }, {
     "skill_name": "c++"
+  }, {
+    "skill_name": "javascript"
+  }, {
+    "skill_name": "illustration"
+  }, {
+    "skill_name": "bicycling"
+  }, {
+    "skill_name": "fermenting"
+  }, {
+    "skill_name": "brewing"
+  }, {
+    "skill_name": "yoga"
+  }, {
+    "skill_name": "billiards"
+  }, {
+    "skill_name": "woodburning"
+  }, {
+    "skill_name": "survival"
+  }, {
+    "skill_name": "nascar"
+  }, {
+    "skill_name": "taxidermy"
+  }, {
+    "skill_name": "skateboarding"
+  }, {
+    "skill_name": "meditating"
+  }, {
+    "skill_name": "weightlifting"
+  }, {
+    "skill_name": "running"
   }],
   "users": [{
      "username": "Lisa Marie",
      "email": "lisa@website.com",
      "photo": "https://avatars2.githubusercontent.com/u/7815451?v=3&s=460",
-     "skills_held": ["JavaScript", "Illustration", "Poetry"],
-     "skills_wanted": ["Fermenting foods", "Bike repair", "Brewing Beer"]
+     "skills_held": [1,2,3],
+     "skills_wanted": [1,4,5],
+     "occupation": "student"
   }, {
     "username": "Mere A",
     "email": "mere@website.com",
     "photo": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMNnwOtR175r_W1lBvkSdUzktoGcS3xKWHC5JFHblJiqtR4OtqyQ",
-    "skills_held": ["Yoga", "Poetry", "Billiards"],
-    "skills_wanted": ["Survivalist Techniques", "Illustration", "Woodburning"]
+    "skills_held": [7,8,9],
+    "skills_wanted": [1,2,14],
+    "occupation": "astronaut"
   }, {
     "username": "Stylin Douglas",
     "email": "sdouglas@stylind.com",
     "photo": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7aezxe0FGde0Z7yyINzCcL8HCNnWewm7tzFa025DwtNgozv-C",
-    "skills_held": ["Guitar", "Billiards", "Motivational Speaking"],
-    "skills_wanted": ["Brewing Beer", "Yoga", "Survivalist Techniques"]
+    "skills_held": [9,10,1],
+    "skills_wanted": [7,2,14],
+    "occupation": "engineer of music and software and mirth"
    }]
 }

@@ -8,12 +8,9 @@ import { FirebaseDataService } from './firebase-data.service';
   providers: [FirebaseDataService],
   template: `
   <router-outlet></router-outlet>
-  
+
   <h1> Testing for sharing! </h1>
 
-  <div class='skill' *ngFor='let skill of skills | async'>
-    <p>{{skill.skill_name}}</p>
-  </div>
 
   <div class='users' *ngFor='let user of users | async'>
     <p>{{user.username}}</p>
