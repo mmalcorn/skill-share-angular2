@@ -22,9 +22,14 @@ import { FirebaseDataService } from './firebase-data.service';
 export class AppComponent {
   skills: FirebaseListObservable<any[]>;
   users: FirebaseListObservable<any[]>;
-  constructor(angularFire: AngularFire, dataService: FirebaseDataService){
-    this.skills = angularFire.database.list('skills');
-    this.users = angularFire.database.list('users');
+  constructor(angularFire: AngularFire, public dataService: FirebaseDataService){
+    // this.skills = angularFire.database.list('skills');
+    // this.users = angularFire.database.list('users');
+    this.getDataFromService();
+  }
+  getDataFromService() {
+    this.skills = this.dataService.getSkills();
+    this.users = this.dataService.getUsers();
   }
 
 }

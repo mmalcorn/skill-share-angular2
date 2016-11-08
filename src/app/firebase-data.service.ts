@@ -9,13 +9,13 @@ export class FirebaseDataService {
   skills: FirebaseListObservable<any[]>;
   users: FirebaseListObservable<any[]>;
 
-  constructor(angularFire: AngularFire) { }
+  constructor(public angularFire: AngularFire) { }
   getSkills() {
-    var skills = this.angularFire.database.list('skills');
-    return skills;
+    this.skills = this.angularFire.database.list('skills');
+    return this.skills;
   }
   getUsers() {
-    var users = this.angularFire.database.list('users');
-    return users;
+    this.users = this.angularFire.database.list('users');
+    return this.users;
   }
 }
