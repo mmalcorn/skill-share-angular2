@@ -6,6 +6,8 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AngularFireModule } from 'angularfire2';
 import { UserListComponent } from './user-list/user-list.component';
+import { HomeComponent } from './home/home.component';
+import { routing } from './app.routing';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyDhyRz5WogFqRN9wBYLLIVhFUIOuNeebts",
@@ -17,12 +19,14 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    UserListComponent
+    UserListComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    routing,
     AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
