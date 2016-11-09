@@ -5,6 +5,6 @@
 <a routerLink="skill-details">Go to Skill Details</a>
 <div class='skill' *ngFor='let skill of skills | async'>
   <p>
-    <a routerLink="skills/{{skill.id}}">{{skill.skill_name}}</a>
+    <a (click)=goToDetail(skill)>{{skill.skill_name}}</a>
   </p>
 </div>

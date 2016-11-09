@@ -1,13 +1,15 @@
 import { Injectable } from '@angular/core';
 import { Skill } from './skill.model';
 import { User } from './user.model';
-import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { AngularFire, FirebaseListObservable, FirebaseObjectObservable } from 'angularfire2';
 
 @Injectable()
 export class FirebaseDataService {
 
   skills: FirebaseListObservable<any[]>;
   users: FirebaseListObservable<any[]>;
+  skill: FirebaseObjectObservable<any>;
+
 
   constructor(public angularFire: AngularFire) {
   }
@@ -18,5 +20,9 @@ export class FirebaseDataService {
   getUsers() {
     this.users = this.angularFire.database.list('users');
     return this.users;
+  }
+  goToSingleSkill(id) {
+    this.skill = this.angularFire.database.object('skills/'+id);
+    return this.skill;
   }
 }
