@@ -20,6 +20,7 @@ export class UserDetailsComponent implements OnInit {
   users: FirebaseListObservable<any[]>;
   user: FirebaseObjectObservable<any>;
   id: number;
+  skills_held: any[] = [];
 
   ngOnInit() {
     this.getDataFromService();
@@ -30,6 +31,22 @@ export class UserDetailsComponent implements OnInit {
       console.log(this.id);
     });
     this.user = this.dataService.goToSingleUser(this.id);
-    console.log(this.user);
+    // console.log(this.user);
+
+    // this.subscription = this.route.params.subscribe((params: any) => {
+    //       console.log(params['key']);
+    //       this.dataService.goToSingleUser(this.id).subscribe((response) => {
+    //           this.user = response;
+    //           //extra assignments with selectedCustomer object here.
+    //       });
+    //     })
+    //     debugger;
+    // var userSkills = this.dataService.getSingleUserSkills(this.id);
   }
+  getSkillName(skillId){
+    console.log(skillId);
+    this.skills_held[skillId] = this.dataService.goToSingleSkill(skillId);
+    console.log(this.skills_held);
+  }
+
 }

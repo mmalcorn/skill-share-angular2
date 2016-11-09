@@ -1,3 +1,17 @@
 <h2>{{ (user | async)?.username }}</h2>
 
+<h4>Skills Held</h4>
+
+<div *ngFor='let skillId of (user | async)?.skills_held'>
+    {{getSkillName(skillId)}}
+</div>
+
+<h4>Skills Wanted</h4>
+
+<div *ngFor='let skill of (user | async)?.skills_wanted'>
+  <p>
+    {{skill}}
+  </p>
+</div>
+
 <a routerLink="">< Home</a>
