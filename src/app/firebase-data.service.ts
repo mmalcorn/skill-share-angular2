@@ -7,8 +7,10 @@ import { AngularFire, FirebaseListObservable, FirebaseObjectObservable } from 'a
 export class FirebaseDataService {
 
   skills: FirebaseListObservable<any[]>;
-  users: FirebaseListObservable<any[]>;
   skill: FirebaseObjectObservable<any>;
+  users: FirebaseListObservable<any[]>;
+  user: FirebaseObjectObservable<any>;
+
 
 
   constructor(public angularFire: AngularFire) {
@@ -24,5 +26,9 @@ export class FirebaseDataService {
   goToSingleSkill(id) {
     this.skill = this.angularFire.database.object('skills/'+id);
     return this.skill;
+  }
+  goToSingleUser(id) {
+    this.user = this.angularFire.database.object('users/'+id);
+    return this.user;
   }
 }

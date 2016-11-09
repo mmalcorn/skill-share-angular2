@@ -15,7 +15,9 @@ export class HomeComponent implements OnInit {
     public dataService: FirebaseDataService,
     private router: Router
   ) {}
+
   skills: FirebaseListObservable<any[]>;
+
   ngOnInit() {
     this.getDataFromService();
   }

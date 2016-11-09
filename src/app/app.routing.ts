@@ -6,6 +6,7 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 import { MatchesComponent } from './matches/matches.component';
 import { SkillDetailsComponent } from './skill-details/skill-details.component';
 
+
 const appRoutes: Routes = [
   {
     path: '',
@@ -26,6 +27,10 @@ const appRoutes: Routes = [
   {
     path: 'skills/:id',
     component: SkillDetailsComponent
+  },
+  {
+    path: 'users/:id',
+    component: UserDetailsComponent
   }
 ];
 

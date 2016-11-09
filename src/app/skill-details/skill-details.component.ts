@@ -16,7 +16,7 @@ export class SkillDetailsComponent implements OnInit {
     public dataService: FirebaseDataService,
     private route: ActivatedRoute,
     private location: Location
-  ) { }
+  ) {}
   skills: FirebaseListObservable<any[]>;
   skill: FirebaseObjectObservable<any>;
   id: number;
@@ -33,8 +33,4 @@ export class SkillDetailsComponent implements OnInit {
     this.skill = this.dataService.goToSingleSkill(this.id);
     console.log(this.skill);
   }
-
-
 }
-
-//    this.skills = this.angularFire.database.list('skills');
