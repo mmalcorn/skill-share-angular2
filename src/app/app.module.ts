@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { routing } from './app.routing';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { MatchesComponent } from './matches/matches.component';
+import { SkillDetailsComponent } from './skill-details/skill-details.component';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyDhyRz5WogFqRN9wBYLLIVhFUIOuNeebts",
@@ -24,7 +25,8 @@ export const firebaseConfig = {
     UserListComponent,
     HomeComponent,
     UserDetailsComponent,
-    MatchesComponent
+    MatchesComponent,
+    SkillDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -2,7 +2,9 @@
 <a routerLink="users">View All Users</a>
 <br>
 <a routerLink="users/matches">Go to Matches</a>
-
+<a routerLink="skill-details">Go to Skill Details</a>
 <div class='skill' *ngFor='let skill of skills | async'>
-  <p>{{skill.skill_name}}</p>
+  <p>
+    <a routerLink="skills/{{skill.id}}">{{skill.skill_name}}</a>
+  </p>
 </div>
