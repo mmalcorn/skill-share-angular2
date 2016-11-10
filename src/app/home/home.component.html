@@ -10,10 +10,12 @@
   </div>
 </div>
 
-<div class='skill' *ngFor='let skill of skills | async'>
-  <div (click)=goToDetail(skill) class="col-md-3">
-    <div class="col-sm-3">
-      <h4>{{skill.skill_name}}</h4>
+<div class="row skills-row">
+  <div class="skills" *ngFor='let skill of skills | async'>
+    <div (click)=goToDetail(skill)>
+      <div id="skills-list" class="col-sm-4">
+        <h4>{{skill.skill_name}}</h4>
+      </div>
     </div>
   </div>
 </div>

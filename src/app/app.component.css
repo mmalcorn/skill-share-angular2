@@ -1,0 +1,12 @@
+/* ------------------------- Navigation Bar Styles -------------------------- */
+
+.navbar {
+  border-radius: 0px;
+  background-color: #000000;
+}
+
+#brand {
+  text-decoration: none;
+  font-size: 35px;
+  font-family: sans-serif;
+}
