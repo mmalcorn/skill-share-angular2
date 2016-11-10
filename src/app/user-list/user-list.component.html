@@ -1,12 +1,12 @@
-<h1>User List</h1>
+<p class="child-page-title">Community</p>
 
-<div class="user" *ngFor='let user of users | async'>
-
-  <div (click)=goToUserDetail(user)>
-    <a>{{user.username}}</a>
-    <img src="{{user.photo}}" alt="photo">
-    <p>Occupation: {{user.occupation}}</p>
+<div class="row">
+  <div class="user" *ngFor='let user of users | async'>
+    <div (click)=goToUserDetail(user) class="col-sm-4 user-summary">
+      <a>{{user.username}}</a>
+      <br>
+      <img src="{{user.photo}}" alt="photo">
+      <p>Occupation: {{user.occupation}}</p>
+    </div>
   </div>
-
-
 </div>

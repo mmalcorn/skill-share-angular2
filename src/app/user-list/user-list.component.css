@@ -1,0 +1,20 @@
+.child-page-title {
+  font-size: 2em;
+  text-align: center;
+}
+
+.col-sm-4.user-summary {
+  text-align: center;
+}
+
+.user-summary a {
+  text-decoration: none;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+img {
+  width: auto;
+  height: 250px;
+  border-radius: 2.5%;
+}
