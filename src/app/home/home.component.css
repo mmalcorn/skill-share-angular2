@@ -1,0 +1,22 @@
+.jumbotron {
+  background-color: #4EC5C1;
+}
+
+#phrase {
+  text-align: center;
+  font-size: 2.0em;
+}
+
+#home-page-btn-row {
+  margin-top: 30px;
+}
+.btn.user {
+  width: 80%;
+  height: 50px;
+  margin-right: 10%;
+  margin-left: 10%;
+  color: #000000;
+  font-size: 1.2em;
+  background-color: #F2EEE2;
+  border-color: #FFFFFF;
+}

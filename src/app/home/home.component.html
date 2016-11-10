@@ -1,9 +1,13 @@
 <div class="jumbotron">
-
-  <button class="btn btn-warning" routerLink="users">View All Users</button>
-  <br>
-  <button class="btn btn-primary">Create Account</button>
-
+  <p id="phrase">Catchy phrase about discovering and swapping skills that compels a person to sign up.</p>
+  <div id="home-page-btn-row" class="row">
+    <div class="col-xs-6">
+      <button class="btn user btn-warning">Sign Up</button>
+    </div>
+    <div class="col-xs-6">
+      <button class="btn user btn-primary">Log in</button>
+    </div>
+  </div>
 </div>
 
 <div class='skill' *ngFor='let skill of skills | async'>
