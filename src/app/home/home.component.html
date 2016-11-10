@@ -1,10 +1,15 @@
-<h1>Home Page</h1>
-<a routerLink="users">View All Users</a>
-<br>
-<a routerLink="users/matches">Go to Matches</a>
-<a routerLink="skill-details">Go to Skill Details</a>
+<div class="jumbotron">
+
+  <button class="btn btn-warning" routerLink="users">View All Users</button>
+  <br>
+  <button class="btn btn-primary">Create Account</button>
+
+</div>
+
 <div class='skill' *ngFor='let skill of skills | async'>
-  <p>
-    <a (click)=goToDetail(skill)>{{skill.skill_name}}</a>
-  </p>
+  <div (click)=goToDetail(skill) class="col-md-3">
+    <div class="col-sm-3">
+      <h4>{{skill.skill_name}}</h4>
+    </div>
+  </div>
 </div>
