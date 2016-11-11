@@ -48,6 +48,28 @@
      "skills_held": [1,2,3],
      "skills_wanted": [1,4,5],
      "occupation": "student"
+
+  }, {
+     "username": "Alexandre Leibler",
+     "email": "alex@computers.org",
+     "photo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0_E7IviiYePj0t7QBN7agxpjeMFfu2zkqfPTEOnBEaWGWSVg2zg",
+     "skills_held": [4,5,8],
+     "skills_wanted": [6,1,17],
+     "occupation": "genius"
+  }, {
+     "username": "Mr. Potato Head",
+     "email": "mister@potato.head",
+     "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHSgiUY7fPHO2U-zPsOWwFuKIiY-5UFOX90gPu6S6t1lH4Wi8D",
+     "skills_held": [7,2,11],
+     "skills_wanted": [14,4,13],
+     "occupation": "actor"
+  }, {
+    "username": "Valerie Felicity Frizzle",
+    "email": "thefriz@magicschoolbus.com",
+    "photo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3dZCC4cnJ7o6lcVxM9wG-9a_3HTk5xF3rP0KL8qbQKX91ClIF",
+    "skills_held": [15,16,3],
+    "skills_wanted": [8,12,1],
+    "occupation": "teacher"
   }, {
     "username": "Mere A",
     "email": "mere@website.com",

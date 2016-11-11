@@ -1,26 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
-img {
-  max-width: 229px;
-}
-
-/* ------------------------- Navigation Bar Styles -------------------------- */
-
-.navbar {
-  border-radius: 0px;
-
-}
-
-#brand {
-  text-decoration: none;
-  font-size: 40px;
-  font-family: sans-serif;
-  color: #f0ad4e;
-}
-
 /* ------------------------------ Body Styles ------------------------------- */
 
 
+.container {
+  width: 90%;
+}
 
 /* ----------------------------- Footer Styles ------------------------------ */
 
@@ -30,7 +15,7 @@ img {
    bottom: 0px;
    height: 40px;
    width: 100%;
-   background: #333333;
+   background: #4EC5C1;
 }
 
 #footer-text {

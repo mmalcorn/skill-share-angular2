@@ -1,12 +1,15 @@
-<h1>User List</h1>
+<p class="child-page-title">Community</p>
 
-<div class="user" *ngFor='let user of users | async'>
-
-  <div (click)=goToUserDetail(user)>
-    <a>{{user.username}}</a>
-    <img src="{{user.photo}}" alt="photo">
-    <p>Occupation: {{user.occupation}}</p>
+<div class="row">
+  <div class="user" *ngFor='let user of users | async'>
+    <div (click)=goToUserDetail(user) class="col-sm-4 user-summary">
+      <span class="glyphicon pull-left glyphicon-star-empty" aria-hidden="true"></span>
+      <a>{{user.username}}</a>
+      <span class="glyphicon pull-right glyphicon-send" aria-hidden="true"></span>
+      <br>
+      <div class="image-wrap" [ngStyle]="{'background-image': 'url(' + user.photo + ')'}">
+      </div>
+      <p class="occupation">{{user.occupation}}</p>
+    </div>
   </div>
-
-
 </div>

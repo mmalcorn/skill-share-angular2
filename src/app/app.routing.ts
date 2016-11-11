@@ -21,7 +21,7 @@ const appRoutes: Routes = [
     component: UserDetailsComponent
   },
   {
-    path: 'users/matches',
+    path: 'users/:id/matches',
     component: MatchesComponent
   },
   {
