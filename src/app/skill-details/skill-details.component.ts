@@ -51,6 +51,7 @@ export class SkillDetailsComponent implements OnInit {
     if(skillName === undefined) {
     } else {
       this.skillName = skillName;
+      console.log(skillName);
 
     }
   }
