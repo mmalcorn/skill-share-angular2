@@ -33,7 +33,7 @@ const appRoutes: Routes = [
     component: UserDetailsComponent
   },
   {
-    path: 'signup'
+    path: 'signup',
     component: UserFormComponent
   }
 
