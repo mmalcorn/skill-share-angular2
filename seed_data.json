@@ -45,44 +45,44 @@
      "username": "Lisa Marie",
      "email": "lisa@website.com",
      "photo": "https://avatars2.githubusercontent.com/u/7815451?v=3&s=460",
-     "skills_held": [1,2,3],
-     "skills_wanted": [1,4,5],
+     "skills_held": ["dissecting","sailing","jogging"],
+     "skills_wanted": ["brewing","running","survival"],
      "occupation": "student"
 
   }, {
      "username": "Alexandre Leibler",
      "email": "alex@computers.org",
      "photo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0_E7IviiYePj0t7QBN7agxpjeMFfu2zkqfPTEOnBEaWGWSVg2zg",
-     "skills_held": [4,5,8],
-     "skills_wanted": [6,1,17],
+     "skills_held": ["woodburning","taxidermy","nascar"],
+     "skills_wanted": ["meditating","bicycling","fermenting"],
      "occupation": "genius"
   }, {
      "username": "Mr. Potato Head",
      "email": "mister@potato.head",
      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHSgiUY7fPHO2U-zPsOWwFuKIiY-5UFOX90gPu6S6t1lH4Wi8D",
-     "skills_held": [7,2,11],
-     "skills_wanted": [14,4,13],
+     "skills_held": ["Skateboarding","illustration","jogging"],
+     "skills_wanted": ["survival","running","painting"],
      "occupation": "actor"
   }, {
     "username": "Valerie Felicity Frizzle",
     "email": "thefriz@magicschoolbus.com",
     "photo": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3dZCC4cnJ7o6lcVxM9wG-9a_3HTk5xF3rP0KL8qbQKX91ClIF",
-    "skills_held": [15,16,3],
-    "skills_wanted": [8,12,1],
+    "skills_held": ["meditating","survival","woodburning"],
+    "skills_wanted": ["fermenting","billiards","jogging"],
     "occupation": "teacher"
   }, {
     "username": "Mere A",
     "email": "mere@website.com",
     "photo": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMNnwOtR175r_W1lBvkSdUzktoGcS3xKWHC5JFHblJiqtR4OtqyQ",
-    "skills_held": [7,8,9],
-    "skills_wanted": [1,2,14],
+    "skills_held": ["billiards","bicycling","running"],
+    "skills_wanted": ["taxidermy","weightlifting","nascar"],
     "occupation": "astronaut"
   }, {
     "username": "Stylin Douglas",
     "email": "sdouglas@stylind.com",
     "photo": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7aezxe0FGde0Z7yyINzCcL8HCNnWewm7tzFa025DwtNgozv-C",
-    "skills_held": [9,10,1],
-    "skills_wanted": [7,2,14],
+    "skills_held": ["javascript","basketweaving","c++"],
+    "skills_wanted": ["running","woodburning", "fermenting"],
     "occupation": "engineer of music and software and mirth"
    }]
 }

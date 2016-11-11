@@ -25,8 +25,8 @@ export class UserFormComponent implements OnInit {
   getDataFromService() {
     this.skills = this.dataService.getSkills();
   }
-  addAccount(){
-    
+  addAccount(username, email, password, myskills1, myskills2, myskills3, skillswant1, skillswant2, skillswant3){
+    console.log(myskills1);
   }
 
 }

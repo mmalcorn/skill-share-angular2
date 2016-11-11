@@ -6,11 +6,93 @@
    <input class="form-control" #username>
    <label>Enter your e-mail address:</label>
    <input class="form-control" #email>
+   <label>Enter your password</label>
+   <input class="form-control" #password>
  </div>
  <br>
-password input
-<h2>Select the skills you have:</h2>
-  <select class="form-control">
+ <div class="row">
+  <div class="col-xs-6">
+  <h2>Select the skills you have:</h2>
+    <select class="form-control" #myskills1>
+      <option value="dissecting">Dissecting</option>
+      <option value="sailing">sailing</option>
+      <option value="jogging">jogging</option>
+      <option value="basketweaving">basketweaving</option>
+      <option value="painting">painting</option>
+      <option value="c++">c++</option>
+      <option value="javascript">javascript</option>
+      <option value="illustration">illustration</option>
+      <option value="bicycling">bicycling</option>
+      <option value="fermenting">fermenting</option>
+      <option value="brewing">brewing</option>
+      <option value="yoga">yoga</option>
+      <option value="billiards">billiards</option>
+      <option value="woodburning">woodburning</option>
+      <option value="survival">survival</option>
+      <option value="nascar">Nascar</option>
+      <option value="taxidermy">Taxidermy</option>
+      <option value="skateboarding">Skateboarding</option>
+      <option value="meditating">Meditating</option>
+      <option value="weightlifting">Weightlifting</option>
+      <option value="running">Running</option>
+    </select>
+    <br>
+    <select class="form-control" #myskills2>
+      <option value="dissecting">Dissecting</option>
+      <option value="sailing">sailing</option>
+      <option value="jogging">jogging</option>
+      <option value="basketweaving">basketweaving</option>
+      <option value="painting">painting</option>
+      <option value="c++">c++</option>
+      <option value="javascript">javascript</option>
+      <option value="illustration">illustration</option>
+      <option value="bicycling">bicycling</option>
+      <option value="fermenting">fermenting</option>
+      <option value="brewing">brewing</option>
+      <option value="yoga">yoga</option>
+      <option value="billiards">billiards</option>
+      <option value="woodburning">woodburning</option>
+      <option value="survival">survival</option>
+      <option value="nascar">Nascar</option>
+      <option value="taxidermy">Taxidermy</option>
+      <option value="skateboarding">Skateboarding</option>
+      <option value="meditating">Meditating</option>
+      <option value="weightlifting">Weightlifting</option>
+      <option value="running">Running</option>
+    </select>
+    <br>
+    <select class="form-control" #myskills3>
+      <option value="dissecting">Dissecting</option>
+      <option value="sailing">sailing</option>
+      <option value="jogging">jogging</option>
+      <option value="basketweaving">basketweaving</option>
+      <option value="painting">painting</option>
+      <option value="c++">c++</option>
+      <option value="javascript">javascript</option>
+      <option value="illustration">illustration</option>
+      <option value="bicycling">bicycling</option>
+      <option value="fermenting">fermenting</option>
+      <option value="brewing">brewing</option>
+      <option value="yoga">yoga</option>
+      <option value="billiards">billiards</option>
+      <option value="woodburning">woodburning</option>
+      <option value="survival">survival</option>
+      <option value="nascar">Nascar</option>
+      <option value="taxidermy">Taxidermy</option>
+      <option value="skateboarding">Skateboarding</option>
+      <option value="meditating">Meditating</option>
+      <option value="weightlifting">Weightlifting</option>
+      <option value="running">Running</option>
+    </select>
+    <br>
+    <button class="btn btn-success" (click)="addAccount(username.value, email.value, password.value, myskills1.value, myskills2.value, myskills3.value);
+      username.value='';
+      email.value='';
+      password.value='';">Create an account</button>
+  </div>
+<div class="col-xs-6">
+  <h2>Select the skills you desire:</h2>
+  <select class="form-control" #skillswant1>
     <option value="dissecting">Dissecting</option>
     <option value="sailing">sailing</option>
     <option value="jogging">jogging</option>
@@ -33,9 +115,8 @@ password input
     <option value="weightlifting">Weightlifting</option>
     <option value="running">Running</option>
   </select>
-
-<h2>Select the skills you desire:</h2>
-  <select class="form-control">
+  <br>
+  <select class="form-control" #skillswant2>
     <option value="dissecting">Dissecting</option>
     <option value="sailing">sailing</option>
     <option value="jogging">jogging</option>
@@ -58,8 +139,35 @@ password input
     <option value="weightlifting">Weightlifting</option>
     <option value="running">Running</option>
   </select>
+  <br>
+  <select class="form-control" #skillswant3>
+    <option value="dissecting">Dissecting</option>
+    <option value="sailing">sailing</option>
+    <option value="jogging">jogging</option>
+    <option value="basketweaving">basketweaving</option>
+    <option value="painting">painting</option>
+    <option value="c++">c++</option>
+    <option value="javascript">javascript</option>
+    <option value="illustration">illustration</option>
+    <option value="bicycling">bicycling</option>
+    <option value="fermenting">fermenting</option>
+    <option value="brewing">brewing</option>
+    <option value="yoga">yoga</option>
+    <option value="billiards">billiards</option>
+    <option value="woodburning">woodburning</option>
+    <option value="survival">survival</option>
+    <option value="nascar">Nascar</option>
+    <option value="taxidermy">Taxidermy</option>
+    <option value="skateboarding">Skateboarding</option>
+    <option value="meditating">Meditating</option>
+    <option value="weightlifting">Weightlifting</option>
+    <option value="running">Running</option>
+  </select>
+  <br>
 
-  <button class="btn btn-success" (click)="addAccount(username.value, email.value);
-    username.value='';
-    email.value='';">Create an account</button>
+</div>
+
+</div>
+
+
 </form>
