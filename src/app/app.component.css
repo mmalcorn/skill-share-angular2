@@ -5,8 +5,14 @@
   background-color: #000000;
 }
 
-#brand {
+@font-face {
+  font-family: 'brand';
+  src: url('./assets/fonts/Destrukt.ttf')
+}
+
+#brand.navbar-brand {
   text-decoration: none;
   font-size: 35px;
-  font-family: sans-serif;
+  font-family: 'brand', sans-serif;
+  color: #E5E338;
 }
