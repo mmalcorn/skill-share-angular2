@@ -9,12 +9,34 @@
 
 .user-summary a {
   text-decoration: none;
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
-img {
-  width: auto;
-  height: 250px;
+.user-image {
+  background-size: cover;
+  width: 100%;
+  height: auto;
   border-radius: 2.5%;
+  overflow: hidden;
+}
+
+.image-wrap {
+  width:100%;
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
+}
+
+.occupation {
+  font-weight: bold;
+}
+
+.glyphicon {
+  font-size: 1.25em;
+  color: #EC576B;
 }
