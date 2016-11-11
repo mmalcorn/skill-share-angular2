@@ -11,6 +11,7 @@ import { routing } from './app.routing';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { MatchesComponent } from './matches/matches.component';
 import { SkillDetailsComponent } from './skill-details/skill-details.component';
+import { UserFormComponent } from './user-form/user-form.component';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyDhyRz5WogFqRN9wBYLLIVhFUIOuNeebts",
@@ -26,7 +27,8 @@ export const firebaseConfig = {
     HomeComponent,
     UserDetailsComponent,
     MatchesComponent,
-    SkillDetailsComponent
+    SkillDetailsComponent,
+    UserFormComponent
   ],
   imports: [
     BrowserModule,
