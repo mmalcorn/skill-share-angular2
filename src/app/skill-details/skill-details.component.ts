@@ -25,6 +25,7 @@ export class SkillDetailsComponent implements OnInit {
   users: FirebaseListObservable<any[]>;
   userObjects = [];
   id: number;
+  skillName: string;
 
   ngOnInit() {
     this.getDataFromService();
@@ -35,13 +36,22 @@ export class SkillDetailsComponent implements OnInit {
     });
     this.users = this.dataService.getUsers();
     this.skill = this.dataService.goToSingleSkill(this.id);
-    // this.users.subscribe(function(snapshot) {
-    //   this.userObjects = snapshot;
-    // });
+    var self = this;
+    this.skill.subscribe(function(snapshot) {
+      self.getSkillName(snapshot.skill_name);
+    });
     console.log(this.skill);
   }
   goToUserDetail(userObject) {
     console.log(userObject);
     this.router.navigate(['users', userObject.$key]);
+  }
+  getSkillName(skillName){
+
+    if(skillName === undefined) {
+    } else {
+      this.skillName = skillName;
+
+    }
   }
 }

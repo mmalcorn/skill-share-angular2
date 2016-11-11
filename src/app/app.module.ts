@@ -12,6 +12,7 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 import { MatchesComponent } from './matches/matches.component';
 import { SkillDetailsComponent } from './skill-details/skill-details.component';
 import { UserFormComponent } from './user-form/user-form.component';
+import { UserFilterPipe } from './user-filter.pipe';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyDhyRz5WogFqRN9wBYLLIVhFUIOuNeebts",
@@ -28,7 +29,8 @@ export const firebaseConfig = {
     UserDetailsComponent,
     MatchesComponent,
     SkillDetailsComponent,
-    UserFormComponent
+    UserFormComponent,
+    UserFilterPipe
   ],
   imports: [
     BrowserModule,
