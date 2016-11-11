@@ -12,7 +12,6 @@ export class FirebaseDataService {
   user: FirebaseObjectObservable<any>;
 
 
-
   constructor(public angularFire: AngularFire) {
   }
   getSkills() {

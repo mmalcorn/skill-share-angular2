@@ -5,7 +5,7 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { MatchesComponent } from './matches/matches.component';
 import { SkillDetailsComponent } from './skill-details/skill-details.component';
-
+import { UserFormComponent } from './user-form/user-form.component';
 
 const appRoutes: Routes = [
   {
@@ -31,7 +31,12 @@ const appRoutes: Routes = [
   {
     path: 'users/:id',
     component: UserDetailsComponent
+  },
+  {
+    path: 'login',
+    component: UserFormComponent
   }
+
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

@@ -1,0 +1,65 @@
+<!-- TODO: An input form for username and email.  -->
+
+<form>
+  <div class="form-group">
+   <label>Create a username:</label>
+   <input class="form-control" #username>
+   <label>Enter your e-mail address:</label>
+   <input class="form-control" #email>
+ </div>
+ <br>
+password input
+<h2>Select the skills you have:</h2>
+  <select class="form-control">
+    <option value="dissecting">Dissecting</option>
+    <option value="sailing">sailing</option>
+    <option value="jogging">jogging</option>
+    <option value="basketweaving">basketweaving</option>
+    <option value="painting">painting</option>
+    <option value="c++">c++</option>
+    <option value="javascript">javascript</option>
+    <option value="illustration">illustration</option>
+    <option value="bicycling">bicycling</option>
+    <option value="fermenting">fermenting</option>
+    <option value="brewing">brewing</option>
+    <option value="yoga">yoga</option>
+    <option value="billiards">billiards</option>
+    <option value="woodburning">woodburning</option>
+    <option value="survival">survival</option>
+    <option value="nascar">Nascar</option>
+    <option value="taxidermy">Taxidermy</option>
+    <option value="skateboarding">Skateboarding</option>
+    <option value="meditating">Meditating</option>
+    <option value="weightlifting">Weightlifting</option>
+    <option value="running">Running</option>
+  </select>
+
+<h2>Select the skills you desire:</h2>
+  <select class="form-control">
+    <option value="dissecting">Dissecting</option>
+    <option value="sailing">sailing</option>
+    <option value="jogging">jogging</option>
+    <option value="basketweaving">basketweaving</option>
+    <option value="painting">painting</option>
+    <option value="c++">c++</option>
+    <option value="javascript">javascript</option>
+    <option value="illustration">illustration</option>
+    <option value="bicycling">bicycling</option>
+    <option value="fermenting">fermenting</option>
+    <option value="brewing">brewing</option>
+    <option value="yoga">yoga</option>
+    <option value="billiards">billiards</option>
+    <option value="woodburning">woodburning</option>
+    <option value="survival">survival</option>
+    <option value="nascar">Nascar</option>
+    <option value="taxidermy">Taxidermy</option>
+    <option value="skateboarding">Skateboarding</option>
+    <option value="meditating">Meditating</option>
+    <option value="weightlifting">Weightlifting</option>
+    <option value="running">Running</option>
+  </select>
+
+  <button class="btn btn-success" (click)="addAccount(username.value, email.value);
+    username.value='';
+    email.value='';">Create an account</button>
+</form>
