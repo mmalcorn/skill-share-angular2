@@ -1,16 +1,29 @@
-.form-group {
-  width: 50%;
-}
-
-.form-control{
-  width: 50%;
-}
-
 .child-page-title {
   font-size: 2em;
   text-align: center;
 }
 
-#user_creds {
+.form-control {
+  margin: 5px;
+  max-width: 375px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
+.col-xs-12 h4 {
+  text-align: center;
+}
+
+.button-container {
+  text-align: center;
+  margin: 10px;
+}
+
+button.new-account {
+  background-color: #4EC5C1;
+  color: #FFF;
+}
+
+button.new-account:hover {
+  color: #E5E338;
 }

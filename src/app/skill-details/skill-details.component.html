@@ -2,7 +2,7 @@
   Learn {{(skill | async)?.skill_name}}
   {{getSkillName()}} from:
 </p>
-<div class="row">
+<div class="row user-row">
   <div class="user" *ngFor='let user of users | async | userfilter:skillName'>
     <div (click)=goToUserDetail(user) class="user-summary">
       <div class="image-wrap" [ngStyle]="{'background-image': 'url(' + user.photo + ')'}">
