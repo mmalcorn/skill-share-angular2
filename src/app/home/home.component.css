@@ -5,6 +5,7 @@
 #phrase {
   text-align: center;
   font-size: 2.0em;
+  color: #f7f5f4;
 }
 
 #home-page-btn-row {
@@ -37,6 +38,6 @@
 #main-page-brand {
   font-size: 50px;
   font-family: 'brand', sans-serif;
-  color: #FFF;
+  color: #f7f5f4;;
   text-align: center;
 }

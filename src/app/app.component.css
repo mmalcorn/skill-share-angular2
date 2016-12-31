@@ -12,18 +12,18 @@
 }
 
 .navbar-toggle {
-  border-color: #fff;
+  border-color: #f7f5f4;
 }
 
 #brand.navbar-brand {
   text-decoration: none;
   font-size: 35px;
   font-family: 'brand', sans-serif;
-  color: #FFF;
+  color: #f7f5f4;
 }
 
 .navbar-nav>li>a {
-  color: #FFF;
+  color: #f7f5f4;
 }
 
 .navbar-nav>li>a:hover {
@@ -40,7 +40,7 @@ footer {
 }
 
 #footer-text {
-  color: #ffffff;
+  color: #f7f5f4;
   text-align: center;
   padding-top: 9px;
 }
