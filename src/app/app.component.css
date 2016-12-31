@@ -1,4 +1,4 @@
-/* ------------------------- Nav and Footer Styles -------------------------- */
+/* ------------------------- Nav Styles -------------------------- */
 
 @font-face {
   font-family: 'brand';
@@ -29,6 +29,10 @@
 .navbar-nav>li>a:hover {
   color: #E5E338;
 }
+
+
+/* ----------------------------- Footer Styles ------------------------------ */
+
 
 footer {
    position: fixed;
