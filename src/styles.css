@@ -6,23 +6,4 @@ body {
   background-color: #f7f5f4;
 }
 
-.container {
-  width: 85%;
-}
-
 /* ----------------------------- Footer Styles ------------------------------ */
-
-.footer {
-   position: fixed;
-   left: 0px;
-   bottom: 0px;
-   height: 40px;
-   width: 100%;
-   background: #4EC5C1;
-}
-
-#footer-text {
-  color: #ffffff;
-  text-align: center;
-  padding-top: 9px;
-}
