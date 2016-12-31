@@ -6,17 +6,17 @@
     <div class="col-xs-12">
         <div id="user_creds" class="form-group">
          <input class="form-control" placeholder="Username" required #username>
-         <input class="form-control" placeholder="Email" required #email>
-         <input class="form-control" placeholder="Password" required #password>
+         <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email" required #email>
+         <input type="password" class="form-control" placeholder="Password" required #password>
        </div>
      </div>
    </div>
 
   <div class="row">
     <div class="col-xs-12">
-      <h4>Select the skills you have:</h4>
-      <select class="form-control" placeholder="Select skill 1" #myskills1>
-        <option value="" selected disabled>Please select</option>
+      <h4>Skills you have:</h4>
+      <select class="form-control" #myskills1>
+        <option value="" selected disabled>Select from list</option>
         <option value="dissecting">Dissecting</option>
         <option value="sailing">sailing</option>
         <option value="jogging">jogging</option>
@@ -41,7 +41,7 @@
       </select>
 
       <select class="form-control" #myskills2>
-        <option value="" selected disabled>Please select</option>
+        <option value="" selected disabled>Select from list</option>
         <option value="dissecting">Dissecting</option>
         <option value="sailing">sailing</option>
         <option value="jogging">jogging</option>
@@ -66,7 +66,7 @@
       </select>
 
       <select class="form-control" #myskills3>
-        <option value="" selected disabled>Please select</option>
+        <option value="" selected disabled>Select from list</option>
         <option value="dissecting">Dissecting</option>
         <option value="sailing">sailing</option>
         <option value="jogging">jogging</option>
@@ -94,9 +94,9 @@
 
   <div class="row">
     <div class="col-xs-12">
-      <h4>Select the skills you desire:</h4>
+      <h4>Skills you desire:</h4>
       <select class="form-control" #skillswant1>
-        <option value="" selected disabled>Please select</option>
+        <option value="" selected disabled>Select from list</option>
         <option value="dissecting">Dissecting</option>
         <option value="sailing">sailing</option>
         <option value="jogging">jogging</option>
@@ -121,7 +121,7 @@
       </select>
 
       <select class="form-control" #skillswant2>
-        <option value="" selected disabled>Please select</option>
+        <option value="" selected disabled>Select from list</option>
         <option value="dissecting">Dissecting</option>
         <option value="sailing">sailing</option>
         <option value="jogging">jogging</option>
@@ -146,7 +146,7 @@
       </select>
 
       <select class="form-control" #skillswant3>
-        <option value="" selected disabled>Please select</option>
+        <option value="" selected disabled>Select from list</option>
         <option value="dissecting">Dissecting</option>
         <option value="sailing">sailing</option>
         <option value="jogging">jogging</option>
@@ -169,8 +169,13 @@
         <option value="weightlifting">Weightlifting</option>
         <option value="running">Running</option>
       </select>
+
+      <!-- <label for="exampleInputFile">File input</label>
+      <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+      <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small> -->
     </div>
   </div>
+
   <div class="button-container">
     <button class="btn btn-lg new-account" (click)="addAccount(username.value, email.value, password.value, myskills1.value, myskills2.value, myskills3.value);
     username.value='';
